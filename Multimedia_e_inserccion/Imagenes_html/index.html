@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Orlando Hernández">
+    <title>Imagenes en HTML</title>
+</head>
+<body>
+    <main>
+        <!-- Rutas relativas -->
+        <img src="dinosaur.jpg"> <br>
+        <img src="img/dinosaur.jpg"> <br>
+
+        <!-- Rutas absolutas -->
+        <img src="https://www.example.com/images/dinosaur.jpg"> <br>
+        
+        <!-- Usando el atributo alt -->
+        <img src="img/dinosaur.jpg" alt="La cabeza y el torso de un esqueleto de dinosaurio;
+        tiene una cabeza grande con dientes largos y afilados"> <br>
+        
+        <!-- Anchura y altura. -->
+        <img src="img/dinosaur.jpg" alt="La cabeza y el torso de un esqueleto de dinosaurio;
+        tiene una cabeza grande con dientes largos y afilados" width="400" height="341">
+
+        <!-- Titulo en imagenes -->
+        <img src="images/dinosaur.jpg" alt="La cabeza y el torso de un esqueleto de dinosaurio; tiene una cabeza grande con dientes largos y afilados" width="400" height="341" 
+        title="Exposición de un T-Rex en el museo de la Universidad de Manchester."> <br>
+    
+        <!-- Aprendizaje activo: Incrustar imagenes -->
+        <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg" 
+        alt="La cabeza y el torso de un esqueleto de dinosaurio" width="200px" height="171px" title="Exposición de un T-Rex en el museo de la Universidad de Manchester.">
+    
+        <!-- Comentar imagenes con figure y figcaption -->
+        <!-- Un elemento figure podría contener varias imágenes, un trozo de código, audio, video, ecuaciones, una tabla, o cualquier otra cosa. -->
+        <figure>
+            <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg">
+            <figcaption>Exposición de un T-rex en el museo de la Universidad de Manchester</figcaption>
+        </figure>
+
+        <!-- Aprendizaje Activo: crear un elemento figure -->
+        <figure>
+            <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg" 
+            alt="La cabeza y el torso de un esqueleto de dinosaurio" width="200px" height="171px">
+            <figcaption>Exposición de un T-Rex en el museo de la Universidad de Manchester.</figcaption>
+        </figure>
+    </main>
+</body>
+</html>

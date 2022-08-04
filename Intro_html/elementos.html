@@ -1,0 +1,78 @@
+<!-- ANATOMÍA DE UN ELEMENTO -->
+
+<!-- Creando el primer elemento -->
+<!-- etiqueta em, hace cursiva el texto -->
+<em>Este es mi texto.</em>
+
+
+<!-- Elementos Anidados -->
+<!-- etiqueta strong hace negritas o resalta el texto -->
+<p>Mi gato es <strong>muy</strong> gruñón.</p>
+
+
+<!-- Elementos en línea -->
+<em>primero</em><em>segundo</em><em>tercero</em>
+
+
+<!-- Elementos de bloque -->
+<p>cuarto</p><p>quinto</p><p>sexto</p>
+
+
+<!-- Elementos vacíos -->
+<!--
+    No todos los elementos siguen el patrón de etiqueta de
+    apertura, contenido y etiqueta de cierre.
+    Algunos elementos consisten solo en una etiqueta única
+ -->
+<img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png">
+
+
+<!-- ATRIBUTOS -->
+
+<!-- Aprendizaje activo -->
+
+<!-- 
+    Edita la línea de abajo <p></p> para 
+    convertirlo en un enlace a tu sitio web favorito.
+
+    - Añade el elemento <a>.
+    - Añade el atributo href y el atributo title.
+    - Especifica el atributo target para abrir el enlace en una 
+      nueva pestaña.
+ -->
+ <!-- href redirige hacia otra pagina; title establece el texto al colocarnos sobre el link; target con _blank nos manda a otra ventana -->
+<a href="https://www.youtube.com" title="Página inicio de youtube" target="_blank">
+    <p>Un enlace a mi sitio web favorito</p>
+</a>
+
+
+<!-- Atributos booleanos -->
+<!-- 
+    deshabilita los elementos de entrada del formulario para 
+    que el usuario no pueda realizar entradas.
+ -->
+<input type="text" disabled="disabled">
+
+<!-- el uso del atributo deshabilitado evita que el usuario final introduzca texto en el cuadro de entrada -->
+<input type="text" disabled>
+
+<!-- se permite la entrada de texto, ya que no contiene el atributo deshabilitado -->
+<input type="text">
+
+
+<!-- Comillas dobles o simples -->
+<!-- $apos es una comilla simple -->
+<a href='http://www.ejemplo.com' title='¿A que es &apos;divertido&apos;?'>Un enlace a mi ejemplo.</a>
+
+
+<!-- Referencias a entidades -->
+<!-- 
+    < = $lt;
+    > = $gt;
+    " = $quout;
+    ' = $apos;
+    & = $amp;
+ -->
+ <p>En HTML, defines un párrafo con el elemento <p>.</p>
+
+<p>En HTML, defines un párrafo con el elemento &lt;p&gt;.</p>

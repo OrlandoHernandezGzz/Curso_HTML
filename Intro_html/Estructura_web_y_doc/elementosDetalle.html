@@ -1,0 +1,79 @@
+<!-- 
+    - <main> encierra el contenido particular a esta página. 
+    - <article> encuadra un bloque de contenido que tiene sentido por sí mismo aparte del resto de la página 
+        (por ejemplo una entrada en un blog).
+    - <section> es parecido al elemento <article>, pero se usa más para agrupar cada 
+        parte de la página que, por su funcionalidad, constituye una sección en sí
+        misma.
+    - <aside> incluye contenido que no está directamente relacionado con el contenido
+        principal, pero que puede aportar información adicional relacionada 
+        indirectamente con él (resúmenes, biografías del autor, enlaces
+        relacionados, etc.).
+    - <header> representa un grupo de contenido introductorio.
+    - <nav> contiene la funcionalidad de navegación principal de la página. 
+    - <footer> representa un grupo de contenido al final de una página.
+ -->
+
+
+ <!-- Envolturas no semanticas -->
+ <p>
+    El rey volvió ebrio a su habitación alrededor de la 01:00, y sin duda la cerveza no le ayudaba
+    cuando cruzó tambaleante la puerta <span class="editor-note">[nota del editor: en este instante de la
+    representación, deberían atenuarse las luces]</span>.
+</p>
+
+<!-- 
+    Este no es un elemento lateral (<aside>) porque no necesariamente está relacionado 
+    con el contenido principal de la página (en realidad quieres que se pueda ver 
+    desde cualquier página). Ni siquiera se puede incluir en una sección (<section>) 
+    porque su contenido no forma parte del contenido principal de la página. 
+    Por lo tanto, un elemento <div> es el adecuado en este caso.
+-->
+<div class="shopping-cart">
+    <h2>Carrito de compras</h2>
+    <ul>
+      <li>
+        <p><a href=""><strong>Pendientes de plata</strong></a>: $99.95.</p>
+        <img src="../products/3333-0985/" alt="Pendientes de plata">
+      </li>
+      <li>
+        ...
+      </li>
+    </ul>
+    <p>Importe total: $237.89</p>
+  </div>
+
+
+<!-- Saltos de línea y líneas horizontales -->
+<!-- 
+    El elemento <br> genera un salto de línea en un párrafo;
+ -->
+<p>
+    Había una vez un hombre llamado O'Dell<br>
+    A quién le encantaba escribir HTML<br>
+    Pero su estructura era mala, su semántica era triste<br>
+    y su marcado no se interpretó muy bien.
+</p>
+
+<br><br>
+
+<!-- 
+    Los elementos <hr> generan una regla horizontal en el documento que denota un 
+    cambio en la temática del texto.
+-->
+<p>Ron fue acorralado en una esquina por las bestias abisales que merodeaban. Asustado, pero decidido a proteger a sus amigos, levantó su varita y se preparó para la batalla, con la esperanza de que su llamada de socorro hubiera llegado a alguien.</p>
+<hr>
+<p>Mientras tanto, Harry estaba sentado en su casa, mirando su declaración de regalías y pensando en cuándo saldría la próxima serie derivada, cuando de pronto voló por su ventana una carta de socorro y aterrizó en su regazo. La leyó vagamente y suspiró; "Será mejor que vuelva al trabajo entonces", reflexionó.</p>
+
+
+<!-- Planificación de una página web. -->
+<!-- 
+    1. Anota lo que deseas tener en común en cada página.
+    2. A continuación, esboza un esquema sencillo de cuál podría ser la estructura 
+    deseada de la apariencia de cada página.
+    3. Ahora, elabora una lista completa con todo el resto del contenido de tu sitio 
+    web que no sea común a todas las páginas.
+    4. Ahora trata de esquematizar un mapa de tu sitio — dibuja un globo para cada 
+    página de tu sitio web y dibuja líneas que identifiquen el flujo de datos 
+    entre las distintas páginas.
+ -->

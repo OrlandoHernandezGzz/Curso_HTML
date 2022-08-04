@@ -1,0 +1,72 @@
+<!-- El párrafo dentro de la etiqueta  <video>
+Se lo llama fallback content (contenido de reserva) -->
+<video src="rabbit320.webm" controls>
+    <p>Tu navegador no soporta HTML5 video. Aquí está el 
+        <a href="rabbit320.webm">enlace del video</a>
+    </p>
+</video>
+
+
+
+<!-- Tomamos el atributo src del tag <video> y en su lugar incluimos elementos separados <source> que apuntan a sus propias fuentes. En este caso el browser irá a los elementos <source> y reproducirá el primero de los elementos que el codec soporte. -->
+<video controls>
+    <source src="rabbit320.mp4" type="video/mp4">
+    <source src="rabbit320.webm" type="video/webm">
+    <p>Su navegador no soporta video HTML5. Aquí hay un <a href="rabbit320.mp4">enlace al video</a>.</p>
+</video>
+
+
+
+<!-- 
+    autoplay: Hace que el audio o el vídeo empiece a reproducirse de 
+    inmediato, mientras se carga el resto de la página. Le aconsejamos 
+    que no utilice vídeo (o audio) de reproducción automática en sus 
+    sitios, ya que los usuarios pueden encontralo molesto.
+
+    loop: Hace que el vídeo (o audio) comience a reproducirse cada vez 
+    que finaliza.
+
+    muted: Hace que los medios se reproduzcan con el sonido apagado de 
+    forma predeterminada.
+    
+    poster: La URL de una imagen que se mostrará antes de reproducir el 
+    vídeo. Está destinado a ser utilizado para una pantalla de 
+    presentación o pantalla publicitaria (miniatura del vídeo).
+
+    preload: Se utiliza para almacenar en búfer archivos grandes; 
+    Puede tomar uno de estos tres valores:
+
+    - "none" no almacena el archivo en el búfer
+    - "auto" almacena el archivo multimedia
+    - "metadata" almacena solo los metadatos del archivo
+ -->
+<video controls width="400" height="400"
+       autoplay loop muted
+       poster="poster.png">
+  <source src="rabbit320.mp4" type="video/mp4">
+  <source src="rabbit320.webm" type="video/webm">
+  <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
+</video>
+
+<br><br><br>
+
+<!-- Audio -->
+<audio controls>
+    <source id="my-media-element" src="viper.mp3" type="audio/mp3">
+    <source src="vipper.ogg" type="audio/ogg">
+    <p>Your borwser doesn't support HTML5 audio. Here is a 
+        <a href="viper.mp3">link to the audio</a> instead.
+    </p>
+</audio>
+
+
+<!-- 
+    Reinicio de la reproducción multimedia
+    En cualquier momento, puede restablecer los medios al principio—incluyendo 
+    el proceso de selección de la mejor fuente de medios, si se 
+    especifica más de una usando <source> elementos—llamando al elemento.
+ -->
+<script>
+    let mediaElem = document.getElementById("my-media-element");
+    mediaElem.load();
+</script>
